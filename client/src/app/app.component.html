@@ -1,0 +1,20 @@
+<h1>amplify-js issue #5309 reproduce</h1>
+<a href="https://github.com/aws-amplify/amplify-js/issues/5309">Link to github issue</a><br>
+
+<div class="container">
+
+    <div class="left">Token</div>
+    <div class="right"><textarea class="wide" rows=10 [value]="authToken" readonly></textarea></div>
+    <div class="left">IdentityId</div>
+    <div class="right"><textarea class="wide" [value]="identityId" readonly></textarea></div>
+    <div class="left">Decoded Token</div>
+    <div class="right"><textarea class="wide" rows=10 [value]="tokenDataJSONString" readonly></textarea></div>
+    <div class="left">Amplify Response</div>
+    <div class="right"><textarea class="wide" rows=20 [value]="authResponse" readonly></textarea></div>
+    <div class="whole">
+        <input type="button" (click)="getToken()" value="Get authorization_token">
+        <input type="button" (click)="authenticateWithToken()"
+            value="Use authorization_token to authenticate to Amplify">
+        <input type="button" (click)="signOut()" value="Signout of Amplify">
+    </div>
+</div>

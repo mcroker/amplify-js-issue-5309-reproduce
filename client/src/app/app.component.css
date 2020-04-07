@@ -1,0 +1,22 @@
+.right {
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.whole {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+textarea {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+}
